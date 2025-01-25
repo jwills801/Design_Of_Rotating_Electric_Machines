@@ -1,0 +1,15 @@
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+
+*.exe
+*.pdf
+
+# For now, not tracking anything in the wineprefix folder, but we'll probably want to later once we start using it
+/wineprefix/
