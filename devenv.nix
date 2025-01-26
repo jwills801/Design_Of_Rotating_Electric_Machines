@@ -20,10 +20,6 @@
   # services.postgres.enable = true;
 
   # https://devenv.sh/scripts/
-    scripts.femm = {
-    description = "Run FEMM using Wine";
-    exec = "wine $WINEPREFIX/drive_c/Program\\ Files/FEMM42/bin/femm.exe";
-  };
 
   scripts.hello.exec = ''
     echo hello from $GREET

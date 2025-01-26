@@ -7,4 +7,4 @@ The workflow should follow the guidlines from [Severson's group](https://github.
 This repository uses a package called devenv to make a unique software enviorment just for this repo. I folowed the instructions in https://github.com/adam-gaia/smellgoodcode in smellgoodcode/src/intro.md under devenv. Wine is installed only in this repo because of the additions made in the devenv.nix file. The FEMM application was installed using wine by first downloading the 32 bit .exe file from their website and using the command:
 wine <path-to-femm-installer.exe>
 To run FEMM later, we can type:
-devenv run femm
+wine wineprefix/drive_c/femm42/bin/femm.exe
