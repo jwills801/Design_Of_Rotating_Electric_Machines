@@ -13,3 +13,13 @@ wine <path-to-femm-installer.exe>
 
 To run FEMM later, we can type:
 wine wineprefix/drive_c/femm42/bin/femm.exe
+
+To run in matlab, we had to add some lines to the startup.m file 
+
+addpath('/full/path/to/mfiles/')
+
+% add path (found from the terminal command: find /nix/store -name "libz.so.1") to libz in matlabs enviornment.
+setenv('LD_LIBRARY_PATH', '/nix/store/7mkhnqiwy5alizb185m3ixa3c7k1jhgn-devenv-profile/lib/libz.so.1:$LD_LIBRARY_PATH'); 
+setenv('WINEPREFIX', '/full/path/to/wineprefix');
+
+Also, I've been starting matlab from within the devenv enviornment, but I'm not sure if that's necessary. In matlab, we can open femm by system('/nix/store/nbq8laq2p99q21aak2m9qj5sqlpw1c76-wine-wow-9.0/bin/wine /full/path/to/wineprefix/drive_c/femm42/bin/femm.exe'); The first part of the command inside of system is the path to wine (found from which -wine in terminal). The second part of the command is the full system path to femm.exe.

@@ -8,7 +8,8 @@
 
   # https://devenv.sh/packages/
   packages = [ pkgs.git
-              pkgs.wineWowPackages.stable ];
+               pkgs.wineWowPackages.stable 
+              ];
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;
