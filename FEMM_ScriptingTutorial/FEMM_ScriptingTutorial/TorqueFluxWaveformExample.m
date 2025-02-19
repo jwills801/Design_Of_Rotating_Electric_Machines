@@ -1,9 +1,3 @@
-%% Initialize the workspace
-clear
-close all
-clc
-addpath('C:\femm42\mfiles');
-
 %% Run script to import geometry and configure the motor
 SetupModel
 

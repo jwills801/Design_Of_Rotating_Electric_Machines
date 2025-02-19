@@ -1,10 +1,7 @@
 %% Initialize the workspace
-% clear
-% close all
-% clc
-% addpath('C:\femm42\mfiles');
 addpath('/home/jackson/Documents/Courses/Year5/Design_Of_Rotating_Electric_Machines/wineprefix/drive_c/femm42/mfiles')
-
+    % I don't think this is necessary because this line is already in the
+    % matlab startup.m file, but it's included here for fun or something
 
 %% Run script to import geometry and configure the motor
 SetupModel
